@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.tp2.HelloController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="628.0" style="-fx-background-color: #1e81b0;">
+         <children>
+            <Label prefHeight="142.0" prefWidth="631.0" text="Rendez-vous du cabinet médical">
+               <font>
+                  <Font name="Corbel" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextField fx:id="txtPatient" layoutX="143.0" layoutY="118.0" />
+      <Label layoutX="25.0" layoutY="122.0" text="Nom du patient" />
+      <Label layoutX="8.0" layoutY="183.0" text="Nom de la pathologie" />
+      <Label layoutX="14.0" layoutY="231.0" text="Date du rendez-vous" />
+      <ComboBox fx:id="cboPathologie" layoutX="143.0" layoutY="179.0" prefWidth="150.0" />
+      <DatePicker fx:id="dtRdv" layoutX="144.0" layoutY="231.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="11.0" layoutY="293.0" text="Heure du rendez-vous" />
+      <Label layoutX="8.0" layoutY="345.0" text="Minute du rendez-vous" />
+      <Spinner fx:id="spHeureRdv" layoutX="143.0" layoutY="289.0" />
+      <Spinner fx:id="spMinuteRdv" layoutX="143.0" layoutY="341.0" />
+      <TreeView fx:id="tvPlanning" layoutX="294.0" layoutY="100.0" prefHeight="301.0" prefWidth="338.0" />
+      <Button fx:id="btnValider" layoutX="43.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#btnValiderClicked" prefHeight="25.0" prefWidth="219.0" text="Valider" />
+   </children>
+</AnchorPane>
